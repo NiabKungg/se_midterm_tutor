@@ -69,7 +69,7 @@
                 </li>
                 <li>
                     <button onclick="showTab('ver-val')" id="btn-ver-val" class="w-full text-left px-6 py-2.5 hover:bg-slate-800 transition-colors flex items-center tab-btn text-slate-300">
-                        <i class="fas fa-check-double w-6 text-slate-400"></i> 5. Verification vs Validation (Ch4)
+                        <i class="fas fa-check-double w-6 text-slate-400"></i> 5. Tasks of SW Development (Ch4)
                     </button>
                 </li>
                 
@@ -673,9 +673,33 @@
                     <div class="bg-emerald-100 p-3 rounded-lg mr-4 text-emerald-600">
                         <i class="fas fa-check-double text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-slate-800">4. Verification vs Validation</h2>
+                    <h2 class="text-2xl font-bold text-slate-800">4. Tasks of Software Development (Ch4)</h2>
                 </div>
-                
+
+                <div class="exam-hint mb-8">
+                    <div class="exam-hint-title"><i class="fas fa-bullhorn text-lg"></i> แนวข้อสอบ:</div>
+                    <p class="text-slate-700 mt-2">Verification vs Validation คือจุดตายที่ออกแน่ๆ (ดูด้านล่าง) แต่กิจกรรมอื่นใน Ch4 อย่าง Feasibility Study, Documentation, Design ก็ถูกเอามาถามได้ในข้อจับคู่ ให้จำ <span class="font-bold">"ชื่อกิจกรรม ↔ ผลลัพธ์ (Product)"</span> ให้ได้</p>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center"><i class="fas fa-tasks mr-2 text-emerald-600"></i> 13 กิจกรรมใน Software Development</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">1. Feasibility Study</strong><p class="text-sm text-slate-600 mt-1">กิจกรรมแรก ตัดสินใจว่าโครงการควรเดินต่อหรือไม่ (ระบบไม่จำเป็น / แพงเกิน / เสี่ยงเกิน) ใช้ <strong>Cost-Benefit Analysis</strong> เทียบต้นทุนกับผลตอบแทนที่คาดหวัง</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">2. Requirements Engineering</strong><p class="text-sm text-slate-600 mt-1">หาความต้องการของผู้ใช้ (Client/Customer) แล้วบันทึกให้ชัดเจน ผลลัพธ์ = <strong>Requirements Specification</strong></p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">3. User Interface Design</strong><p class="text-sm text-slate-600 mt-1">ออกแบบ UI ให้ใช้งานง่าย ส่วนใหญ่เป็น <strong>Graphical User Interface (GUI)</strong></p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">4. Architectural Design</strong><p class="text-sm text-slate-600 mt-1">ออกแบบภาพใหญ่ (Large-scale) — แบ่งระบบใหญ่เป็น <strong>Modules/Components</strong> ผลลัพธ์ = Architectural design + Module specifications</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">5. Detailed Design</strong><p class="text-sm text-slate-600 mt-1">ออกแบบภายในของแต่ละโมดูล ผลลัพธ์ = <strong>Detailed designs</strong> ของทุกโมดูล</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">6. Programming (Coding)</strong><p class="text-sm text-slate-600 mt-1">แปลง Design เป็นคำสั่งในภาษาโปรแกรม (ต้องเลือกภาษาให้เหมาะ) ผลลัพธ์ = <strong>Code</strong></p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">7. System Integration</strong><p class="text-sm text-slate-600 mt-1">ประกอบชิ้นส่วนย่อยเข้าด้วยกัน (เรียกว่า <strong>The Build</strong>) ผลลัพธ์ = Complete system</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">8. Verification</strong><p class="text-sm text-slate-600 mt-1">ตรวจว่าระบบถูกสร้างถูกต้อง (Developer's view) ประกอบด้วย <strong>Unit Testing + System Testing</strong> ↓ ดูรายละเอียดด้านล่าง</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">9. Validation</strong><p class="text-sm text-slate-600 mt-1">ตรวจว่าระบบตรงความต้องการผู้ใช้ (Client's view) ตัวอย่างสำคัญคือ <strong>Acceptance Testing</strong> ↓ ดูรายละเอียดด้านล่าง</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">10. Production</strong><p class="text-sm text-slate-600 mt-1">นำระบบไปใช้งานจริง (บางครั้งเรียก <strong>Implementation</strong>) ผู้ใช้อาจต้องเข้ารับการอบรม (Training)</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">11. Maintenance</strong><p class="text-sm text-slate-600 mt-1">แก้ไข/เพิ่มเติมซอฟต์แวร์หลังใช้งานจริง มักกินเวลาหลายปี ผลลัพธ์ = <strong>Modified software</strong></p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">12. Documentation</strong><p class="text-sm text-slate-600 mt-1">เอกสาร 2 กลุ่ม — <strong>User</strong> (วิธีติดตั้ง/ใช้งาน เน้น "what" มุมมองภายนอก) และ <strong>Developer</strong> (specification, design, code, comments, test schedules/results, project plan)</p></div>
+                        <div class="bg-slate-50 rounded-xl p-4"><strong class="text-slate-800">13. Project Management</strong><p class="text-sm text-slate-600 mt-1">สร้าง/ดูแลแผนงาน แก้ปัญหา มอบหมายงาน และตรวจว่างานเสร็จ — เนื้อหาละเอียดอยู่ใน <strong>Ch5</strong></p></div>
+                    </div>
+                </div>
+
                 <div class="bg-red-600 rounded-xl text-white p-6 shadow-lg mb-8 relative overflow-hidden">
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 text-white opacity-10 text-9xl">
                         <i class="fas fa-exclamation-triangle"></i>
@@ -738,7 +762,7 @@
 
                 <div class="mt-10 text-center">
                     <button onclick="startChapterQuiz('ch4')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition inline-flex items-center">
-                        <i class="fas fa-play-circle mr-2"></i> ทำแนวข้อสอบบทนี้: Ch4 Verification vs Validation (7 ข้อ)
+                        <i class="fas fa-play-circle mr-2"></i> ทำแนวข้อสอบบทนี้: Ch4 Tasks of SW Development (11 ข้อ)
                     </button>
                 </div>
             </div>
@@ -796,6 +820,36 @@
                     </div>
                 </div>
 
+                <div class="mt-10 border-t border-slate-100 pt-8">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center"><i class="fas fa-chart-bar mr-2 text-yellow-600"></i> เสริม Ch5: เครื่องมือวางแผน & ควบคุมโครงการ (ออกข้อจับคู่)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">WBS (Work Breakdown Structure)</h4>
+                            <p class="text-sm text-slate-600 mt-1">แบ่งงานใหญ่ออกเป็นงานย่อยเป็นลำดับชั้น (เช่น Software Development → Requirement Definition / Design / Development / Integrate Testing / Project Management) เพื่อประเมินเวลา-ทรัพยากรได้ง่าย</p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">Gantt Chart</h4>
+                            <p class="text-sm text-slate-600 mt-1">แผนภาพแท่งแสดงว่างานแต่ละชิ้นเริ่ม-จบเมื่อไร (Henry L. Gantt, 1917) <strong class="text-red-600">ข้อจำกัด:</strong> ไม่แสดงความสัมพันธ์ระหว่างงาน ไม่บอกผลกระทบถ้างานล่าช้า และไม่เหมาะกับโปรเจกต์ใหญ่ที่ซับซ้อน</p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">PERT (Program Evaluation and Review Technique)</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>เน้นเวลา (Time)</strong> เหมาะกับโปรเจกต์ใหญ่ ใช้ Network Diagram แบบ AOA (Activity On Arrow) เพื่อดูความสัมพันธ์และลำดับงาน</p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">CPM (Critical Path Method)</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>เน้นต้นทุน (Cost)</strong> ใช้หา Critical Path — เส้นทางงานที่ถ้าล่าช้าจะกระทบเวลารวมของโครงการ</p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">Milestones vs Deliverables</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Milestones</strong> = จุดสิ้นสุดของแต่ละ Process Activity (ใช้วัดความคืบหน้า) / <strong>Deliverables</strong> = ผลงานที่ส่งมอบให้ลูกค้า (เช่น Feasibility report, Requirements definition)</p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-800">Project Life Cycle</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Initiation</strong> (กำหนดขอบเขต/ขนาดงาน) → <strong>Planning</strong> (วางแผนงาน-เวลา-ความเสี่ยง) → <strong>Execution</strong> (ลงมือทำตามแผน) → <strong>Closing</strong> (ปิดโครงการ — สำเร็จหรือล้มเหลว)</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-10 text-center">
                     <button onclick="startChapterQuiz('ch5')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition inline-flex items-center">
                         <i class="fas fa-play-circle mr-2"></i> ทำแนวข้อสอบบทนี้: Ch5 Project Management (8 ข้อ)
@@ -812,6 +866,78 @@
                         <i class="fas fa-laptop-medical text-2xl"></i>
                     </div>
                     <h2 class="text-2xl font-bold text-slate-800">ติวอัตนัย: การวิเคราะห์ระบบ CS-Hospital</h2>
+                </div>
+
+                <div class="exam-hint mb-8">
+                    <div class="exam-hint-title"><i class="fas fa-bullhorn text-lg"></i> แนวข้อสอบ:</div>
+                    <p class="text-slate-700 mt-2">ข้อเขียนให้ "เขียน FR และ NFR จากโจทย์ระบบ" — อ่านทฤษฎีด้านล่างให้จบ แล้วค่อยดูตัวอย่างเฉลย CS-Hospital และฝึกทำแนวข้อสอบท้ายบท</p>
+                </div>
+
+                <div class="space-y-6 mb-8">
+                    <div class="border border-slate-200 rounded-xl p-6">
+                        <h3 class="font-bold text-lg text-slate-800 mb-3"><i class="fas fa-list-alt mr-2 text-indigo-500"></i> ประเภทของ Requirements (Ch6)</h3>
+                        <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
+                            <li><strong>Functional Requirements (FR)</strong> — ฟังก์ชันทางธุรกิจที่ผู้ใช้จะใช้ทำงานกับระบบ (สิ่งที่ระบบ<u>ต้องทำได้</u>)</li>
+                            <li><strong>Non-Functional Requirements (NFR)</strong> — ข้อกำหนดด้านคุณภาพ/ข้อจำกัดของระบบ ครอบคลุมด้วย <strong>FURPS+</strong></li>
+                            <li><strong>User Interface Requirements</strong> — ข้อกำหนดเกี่ยวกับหน้าตา/การใช้งาน UI</li>
+                        </ul>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-6">
+                        <h3 class="font-bold text-lg text-slate-800 mb-3"><i class="fas fa-shield-alt mr-2 text-purple-500"></i> FURPS+ = 5 หมวดของ NFR (ต้องจำได้)</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                            <div class="bg-purple-50 rounded-lg p-3"><strong class="text-purple-800">F — Functionality</strong><span class="text-slate-600"> (รวม <strong>Security</strong> ความปลอดภัย!)</span></div>
+                            <div class="bg-purple-50 rounded-lg p-3"><strong class="text-purple-800">U — Usability</strong><span class="text-slate-600"> ใช้งานง่าย</span></div>
+                            <div class="bg-purple-50 rounded-lg p-3"><strong class="text-purple-800">R — Reliability</strong><span class="text-slate-600"> เชื่อถือได้ ไม่พังบ่อย</span></div>
+                            <div class="bg-purple-50 rounded-lg p-3"><strong class="text-purple-800">P — Performance</strong><span class="text-slate-600"> เร็ว ใช้ทรัพยากรคุ้มค่า</span></div>
+                            <div class="bg-purple-50 rounded-lg p-3 sm:col-span-2"><strong class="text-purple-800">S — Supportability</strong><span class="text-slate-600"> บำรุงรักษา/ติดตั้ง/พกพาได้</span></div>
+                        </div>
+                        <p class="text-xs text-red-600 mt-3"><i class="fas fa-exclamation-triangle mr-1"></i>จุดหลอกข้อสอบ: ในสไลด์ "Security" ถูกจัดอยู่ในหมวด Functionality ไม่ใช่ Reliability!</p>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-6">
+                        <h3 class="font-bold text-lg text-slate-800 mb-3"><i class="fas fa-code-branch mr-2 text-teal-500"></i> วิธีแยก FR กับ NFR (เทคนิคทำข้อสอบ)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-teal-50 rounded-lg p-4">
+                                <p class="font-bold text-teal-800 mb-1">FR ตอบคำถาม "ระบบทำอะไรได้บ้าง?"</p>
+                                <p class="text-slate-600">รูปประโยค: "ระบบต้องสามารถ + คำกริยา" (บันทึก, ค้นหา, พิมพ์, ส่งต่อ, ออกรายงาน)</p>
+                                <p class="text-slate-500 mt-2">ตัวอย่าง: พิมพ์ใบรับรองแพทย์ได้ / ส่งผลวินิจฉัยผ่าน LINE ได้</p>
+                            </div>
+                            <div class="bg-rose-50 rounded-lg p-4">
+                                <p class="font-bold text-rose-800 mb-1">NFR ตอบคำถาม "ระบบดีแค่ไหน / มีเงื่อนไขอะไร?"</p>
+                                <p class="text-slate-600">มักมีตัวเลข ช่วงเวลา หรือคำขยาย: ไม่เกิน 3 วินาที, 99.9%, ตลอด 24 ชม., ปลอดภัย, ใช้งานง่าย</p>
+                                <p class="text-slate-500 mt-2">ตัวอย่าง: พร้อมใช้งาน 99.9% / ค้นหาผู้ป่วยภายใน 3 วินาที</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-6">
+                        <h3 class="font-bold text-lg text-indigo-900 mb-3"><i class="fas fa-pen-fancy mr-2"></i> สูตรเขียนตอบข้อเขียน (ใช้ได้กับทุกโจทย์)</h3>
+                        <ol class="space-y-2 text-sm text-slate-700 list-decimal list-inside">
+                            <li>อ่านโจทย์แล้วขีดเส้นใต้ทุกฟังก์ชันที่โจทย์บอก → เขียนเป็น FR ทีละข้อ (1 บรรทัดโจทย์ = อย่างน้อย 1 FR)</li>
+                            <li>FR ต้องครอบคลุมโจทย์ครบทุกบรรทัด — ถ้าตกบรรทัดไหน = เสียคะแนน</li>
+                            <li>NFR เลือกจาก 5 หมวด FURPS+ อย่างน้อย 3-4 ข้อ และใส่ตัวเลข/ช่วงเวลาให้จับต้องได้ (เช่น 99.9%, ไม่เกิน 3 วินาที, 24 ชม., รองรับ 100 คนพร้อมกัน)</li>
+                            <li>FR ใช้คำกริยา "ระบบต้องสามารถ..." / NFR ใช้ "ระบบต้องมี/ต้องใช้งานได้..." + ตัวเลข</li>
+                        </ol>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl p-6">
+                        <h3 class="font-bold text-lg text-slate-800 mb-3"><i class="fas fa-tools mr-2 text-amber-500"></i> ความรู้ประกอบข้อจับคู่ Ch6</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+                            <div class="bg-slate-50 rounded-lg p-4">
+                                <p class="font-bold text-slate-800 mb-1">RE 3 Components</p>
+                                <p class="text-slate-600"><strong>Gathering</strong> (Elicitation — เก็บความต้องการ) → <strong>Analysis</strong> (กลั่นกรอง/ปรับปรุง) → <strong>Specification</strong> (เขียนเป็นเอกสารให้ชัดเจน)</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg p-4">
+                                <p class="font-bold text-slate-800 mb-1">User Story</p>
+                                <p class="text-slate-600">"As a <em>role</em>, I can <em>capability</em> so that <em>business-goal</em>" — เขียนโดยลูกค้า/ผู้ใช้ นิยมใช้ใน Agile</p>
+                            </div>
+                            <div class="bg-slate-50 rounded-lg p-4">
+                                <p class="font-bold text-slate-800 mb-1">Acceptance Tests</p>
+                                <p class="text-slate-600">ลูกค้าเป็นผู้ทดสอบ <strong>ตลอดทั้งโปรเจกต์</strong> (ไม่ใช่แค่ตอนจบ) เป็นตัวชี้วัดว่า Requirement ถูกทำสำเร็จ</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="bg-slate-100 p-6 rounded-xl mb-8 border border-slate-200">
@@ -1252,7 +1378,7 @@
                 ]
             },
             ch4: {
-                title: "Ch4: Verification vs Validation",
+                title: "Ch4: Tasks of SW Development",
                 items: [
                     {
                         q: "จุดตายข้อสอบ: การตรวจสอบซอฟต์แวร์แบบ Static (เช่น Code Review โดยไม่รันโค้ด) จัดอยู่ในกระบวนการใด?",
@@ -1295,6 +1421,30 @@
                         options: ["Specification, Design, Code, Test results, Project plan", "คู่มือติดตั้งสำหรับผู้ใช้เท่านั้น", "Help System เท่านั้น", "โบรชัวร์สินค้า"],
                         ans: 0,
                         explanation: "PDF: developer documentation = specification, architectural/detailed design, code, comments, test schedules/results, project plan"
+                    },
+                    {
+                        q: "ผลลัพธ์ (Product) ของขั้น Requirements Engineering คืออะไร?",
+                        options: ["Requirements Specification", "Code", "Architectural Design", "Test Results"],
+                        ans: 0,
+                        explanation: "PDF: \"The product of this stage is a requirements specification\""
+                    },
+                    {
+                        q: "Architectural Design กับ Detailed Design ต่างกันอย่างไร?",
+                        options: ["Architectural = แบ่งระบบเป็นโมดูล (ภาพใหญ่), Detailed = ออกแบบภายในแต่ละโมดูล", "ทั้งคู่คือการเขียนโค้ด", "Architectural = ทดสอบระบบ, Detailed = ออกแบบ UI", "ไม่แตกต่างกัน"],
+                        ans: 0,
+                        explanation: "PDF: Architectural (large-scale) design breaks the overall system into modules → products = architectural design + module specifications; Detailed design = design of each module"
+                    },
+                    {
+                        q: "User Documentation เน้นเรื่องอะไร?",
+                        options: ["เน้น \"what\" (มุมมองภายนอก วิธีติดตั้ง/ใช้งาน)", "เน้น \"how\" (โครงสร้างภายในโค้ด)", "เน้นเฉพาะ Test Results", "ไม่มี User Documentation"],
+                        ans: 0,
+                        explanation: "PDF: \"User documentation concentrates on the what (external view) of the software, not the how (internal workings)\""
+                    },
+                    {
+                        q: "Input ของ Unit Testing ประกอบด้วยอะไรบ้าง?",
+                        options: ["Unit specification, Unit code, Expected test results", "Client และ Software ที่ดูสมบูรณ์", "Requirements specification เท่านั้น", "User manual"],
+                        ans: 0,
+                        explanation: "PDF: inputs to unit testing = 1) the unit specification 2) the unit code 3) a list of expected test results"
                     }
                 ]
             },
