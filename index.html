@@ -1558,6 +1558,7 @@
         let currentQuestion = 0;
         let score = 0;
         let scoreInterval = null;
+        let currentOrder = [];
 
         // Quiz Logic
         function startQuiz() {
@@ -1582,10 +1583,18 @@
             document.getElementById('question-counter').innerText = `ข้อ ${currentQuestion + 1} / ${currentQuiz.items.length}`;
             document.getElementById('question-text').innerText = q.q;
             
+            // สลับตำแหน่งตัวเลือกแบบสุ่ม (Fisher-Yates) เพื่อไม่ให้คำตอบถูกอยู่ตัวแรกเสมอ
+            currentOrder = q.options.map((_, i) => i);
+            for (let i = currentOrder.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [currentOrder[i], currentOrder[j]] = [currentOrder[j], currentOrder[i]];
+            }
+            
             const optionsContainer = document.getElementById('options-container');
             optionsContainer.innerHTML = '';
             
-            q.options.forEach((opt, index) => {
+            currentOrder.forEach((optIdx, index) => {
+                const opt = q.options[optIdx];
                 const btn = document.createElement('button');
                 btn.className = 'w-full text-left p-4 border-2 border-slate-200 rounded-xl hover:border-blue-400 hover:bg-blue-50 transition-all duration-200 text-slate-700 font-medium option-btn relative overflow-hidden group';
                 btn.innerHTML = `<span class="relative z-10">${opt}</span><div class="absolute inset-0 bg-blue-100 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out opacity-20"></div>`;
@@ -1617,7 +1626,7 @@
                 btn.classList.add('cursor-not-allowed', 'opacity-60');
             });
 
-            const correctIndex = currentQuiz.items[currentQuestion].ans;
+            const correctIndex = currentOrder[currentQuiz.items[currentQuestion].ans];
 
             if (selectedIndex === correctIndex) {
                 // Correct Answer
