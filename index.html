@@ -1626,7 +1626,7 @@
                 btn.classList.add('cursor-not-allowed', 'opacity-60');
             });
 
-            const correctIndex = currentOrder[currentQuiz.items[currentQuestion].ans];
+            const correctIndex = currentOrder.indexOf(currentQuiz.items[currentQuestion].ans);
 
             if (selectedIndex === correctIndex) {
                 // Correct Answer
